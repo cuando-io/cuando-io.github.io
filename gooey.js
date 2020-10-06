@@ -244,3 +244,8 @@
         a = n.ctx;
     n.resize(), (t = new e(n.width, n.height, 6, "#F56A4B", "#FF387E")), o();
 })();
+
+
+function PromptBrowserNotif(){
+    OneSignal.showNativePrompt();
+}
