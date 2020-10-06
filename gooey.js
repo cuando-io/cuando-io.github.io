@@ -258,3 +258,27 @@ function PromptBrowserNotif(){
         OneSignal.showNativePrompt();
     });
 }
+//
+// document.addEventListener('submit', e => {
+//     // Store reference to form to make later code easier to read
+//     const form = e.target;
+//     alert("WORKS");
+//
+//     var el = document.getElementById("validationServer01");
+//     if (el.value.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
+//         el.classList.add("is-valid");
+//         // Post data using the Fetch API
+//         fetch(form.action, {
+//             method: form.method,
+//             body: new FormData(form)
+//         })
+//     } else{
+//         el.classList.remove("is-valid");
+//         el.classList.add("is-invalid");
+//
+//
+//     }
+//     // Prevent the default form submit
+//     e.preventDefault();
+// });
+//

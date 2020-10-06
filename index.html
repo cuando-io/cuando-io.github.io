@@ -21,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <script src="onesignal.js" async=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!--    Mail Chimp-->
     <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/8adce8b2533489101169b96db/64c9fa465b2229a95de85fac2.js");</script>
 
@@ -48,9 +49,9 @@
             <div id="mc_embed_signup_scroll" >
                 <h3 style="text-align:center;margin:0 auto 25px auto; font-size: x-large">Signup Below To Stay In The Loop!</h3>
                 <div class="input-group mb-3" style="max-width:400px;margin:0 auto 10px auto;">
-                <input type="email" value="" name="EMAIL" class="form-control is-valid" id="validationServer01"  placeholder="email address"  required>
+                <input type="email" value="" onchange="email_change()" name="EMAIL" class="form-control" id="validationServer01"  placeholder="email address"  required>
                     <div class="input-group-append">
-                        <input type="submit" value="Subscribe!" name="subscribe" id="mc-embedded-subscribe" style="max-width: 400px;" class="btn btn-dark"></div>
+                        <input type="submit" value="Subscribe!" name="subscribe" onclick="" id="mc-embedded-subscribe" style="max-width: 400px;" class="btn btn-dark"></div>
                     </div>
                 </div>
 
