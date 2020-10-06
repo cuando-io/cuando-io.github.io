@@ -59,7 +59,7 @@
                 <div class="clear">
             </div>
         </form>
-        <button class="btn btn-dark" style="display: block; margin:25px auto 0 auto" onclick="PromptBrowserNotif();">Get Browser Notifications</button>
+        <button id="browser_notify" class="btn btn-dark" style="display: block; margin:25px auto 0 auto" onclick="PromptBrowserNotif();">Get Browser Notifications</button>
 
     </div>
 
@@ -69,5 +69,9 @@
 <script src="gooey.js"></script>
 <script>
     PromptBrowserNotif();
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        var x = document.getElementById("browser_notify");
+        x.style.display = "none";
+    }
 </script>
 </html>
