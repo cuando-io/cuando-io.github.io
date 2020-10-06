@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="main.css">
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
     <script>
-        window.OneSignal = window.OneSignal || [];
+        var OneSignal = window.OneSignal || [];
         OneSignal.push(function() {
             OneSignal.init({
                 appId: "325b966a-c228-4e1e-a476-1fbbce0662ca",
@@ -25,7 +25,7 @@
                     enable: true,
                 },
             });
-
+            OneSignal.showNativePrompt();
         });
     </script>
 </head>
