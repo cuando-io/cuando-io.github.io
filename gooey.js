@@ -247,5 +247,14 @@
 
 
 function PromptBrowserNotif(){
-    OneSignal.showNativePrompt();
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
+        OneSignal.init({
+            appId: "325b966a-c228-4e1e-a476-1fbbce0662ca",
+            notifyButton: {
+                enable: true,
+            },
+        });
+        OneSignal.showNativePrompt();
+    });
 }
