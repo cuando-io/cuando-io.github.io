@@ -16,12 +16,12 @@ canvas{
 
 @font-face{
     font-family: NotosansKR;
-    src: url(fonts/NotosansKr-Bold.otf);
+    src: url("NotosansKr-Bold.otf");
 }
 
 .overlay{
     color: #333;
-    font-family: NotosansKR;
+    font-family: NotosansKR, serif;
     background: aliceblue;
     opacity: 0.9;
     border-radius: 5px;
