@@ -14,14 +14,14 @@ canvas{
     height:100%;
 }
 
-@font-face{
-    font-family: NotosansKR;
-    src: url("NotosansKr-Bold.otf");
-}
+/*@font-face{*/
+/*    font-family: NotosansKR;*/
+/*    src: url("NotosansKr-Bold.otf");*/
+/*}*/
 
 .overlay{
     color: #333;
-    font-family: NotosansKR, serif;
+    font-family: 'Noto Sans KR', sans-serif;
     background: aliceblue;
     opacity: 0.9;
     border-radius: 5px;
